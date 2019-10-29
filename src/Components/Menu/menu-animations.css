@@ -1,0 +1,43 @@
+.menuItems-appear{
+    opacity: 0;
+    transform:translateY(-5%)
+}
+.menuItems-appear-active{
+    transform:translateY(5%);    
+    opacity: 1;
+    transition: all 200ms ease-in;
+}
+.menuItems-appear-done{
+    transform:translateY(5%);
+}
+.menuItems-enter{
+    opacity: 0;
+    transform:translateY(-5%)
+}
+.menuItems-enter-active{
+    transform:translateY(5%);    
+    opacity: 1;
+    transition: all 200ms ease-in;
+}
+.menuItems-enter-done{
+    transform:translateY(5%);
+}
+
+.menuItems-exit{
+    opacity: 1;
+    transform:translateY(5%);
+
+}
+.menuItems-exit-active{
+    opacity: 0;
+    transform:translateY(-5%);
+    transition: all 200ms ease-in;
+}
+
+.menulink-enter{
+    opacity: 0;
+}
+.menulink-enter-active{
+    opacity: 1;
+    transition: all 400ms ease-in;
+}

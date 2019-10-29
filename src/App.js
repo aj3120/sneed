@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+import CardCollection from './Components/Cards/CardsCollectionComponent'
 import './App.css';
+import { ThemeProvider } from 'styled-components'
+import { theme } from './Commons/theme'
+import MenuComponent from './Components/Menu/MenuComponent';
+import Header from './Components/Header/Header'
+import { ContentSection, ContentImage, ContentImageContainer } from './Commons/MainStyle'
+import MainImg from './images/dashboard-image.jpg'
 
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={theme}>
+        <Header />
+        <MenuComponent />
+        <ContentSection className="content-right">
+          <CardCollection />
+          <ContentImageContainer>
+            <ContentImage src={MainImg} />
+
+          </ContentImageContainer>
+        </ContentSection>
+
+
+      </ThemeProvider>
     </div>
   );
 }

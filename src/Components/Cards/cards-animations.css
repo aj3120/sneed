@@ -1,0 +1,31 @@
+.cards-appear,.cards-enter{
+    opacity: 0;
+}
+.cards-appear-active,.cards-enter-active{
+    opacity: 1;
+    transition: all 400ms ease-in-out;
+}
+.card-exit{
+    opacity: 1;
+}
+.card-exit-active{
+    opacity: 0;
+    transition: all 400ms ease-in-out;
+
+}
+
+.card-collection-appear{
+    opacity: 0;
+}
+.card-collection-appear-active{
+    opacity: 1;
+    transition: all 400ms ease-in-out;
+}
+.card-collection-exit{
+    opacity: 1;
+}
+.card-collection-exit-active{
+    opacity: 0;
+    transition: all 400ms ease-in-out;
+
+}
